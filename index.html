@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="public/images/icone.png" type="image/x-icon">
+    <title>Saberd | Trabalhando com sabedoria.</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/vantagens.css">
+    <link rel="stylesheet" href="css/promessa.css">
+    <link rel="stylesheet" href="css/avaliacao.css">
+    <link rel="stylesheet" href="css/galeria.css">
+    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/msg.css">
+    <link rel="stylesheet" href="slider/styles.css">
+    <script src="slider/script.js" defer></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@1,500&family=Nunito:ital,wght@0,300;0,400;0,600;1,400&display=swap');
+
+        * {
+            border: 0;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+            box-sizing: border-box;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        html {
+            font-size: 62.5%;
+            background-color: var(--black);
+            scroll-behavior: smooth;
+
+            @media only screen and (max-width: 700px) {
+                font-size: 50%;
+            }
+        }
+
+        body {
+            position: relative;
+        }
+
+        :root {
+            --green:#24b524;
+            
+            --primary-blue-dark-1: #2E3D50;
+
+            --primary-blue-light-1: #8894A2;
+            --primary-blue-light-2: #7ba6db;
+
+            --white: #FEEECD;
+            --white-2: #FEEFDE;
+
+            --black: #131921;
+            --black-2: #22201e;
+
+            --secondary-bege-light-1: #D7B791;
+            --secondary-bege-light-2: #dcaa6c;
+            --secondary-bege-light-3: #cf9f65;
+
+            --secondary-bege-medium-1: #C4762B;
+            --secondary-bege-medium-2: #d4892e;
+
+            --sombra-1: #00000010;
+            --sombra-2: #00000020;
+            --sombra-3: #00000030;
+            --sombra-4: #00000040;
+            --sombra-5: #00000050;
+            --sombra-6: #00000060;
+            --sombra-7: #00000070;
+            --sombra-8: #00000080;
+            --sombra-9: #00000090;
+        }
+
+        ::selection {
+            background-color: var(--secondary-bege-medium-2);
+            color: var(--primary-blue-dark-1);
+        }
+
+        .heading__secondary {
+            transition: all .2s;
+            text-shadow: 0 .4rem .8rem var(--sombra-2);
+        }
+
+        .heading__secondary:hover,
+        .heading__secondary:focus {
+            transform: scale(1.02);
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        
+        <nav class="nav">
+            <div class="nav__container">
+                <h2 class="nav__logo">Saberd</h2>
+                <ul class="nav__container nav__ul">
+                    <li class="nav__li"><a class="nav__link nav__texto" href="#vantagens">Como funciona</a></li>
+                    <li class="nav__li"><a class="nav__link nav__texto" href="#promessa">Nossa promessa</a></li>
+                    <li class="nav__li"><a class="nav__link nav__texto" href="#avaliacoes">Avaliações</a></li>
+                    <!-- <li class="nav__li"><a class="nav__link nav__texto" href="#">Link</a></li> -->
+                </ul>
+            </div>
+
+            <div class="nav__container nav__div">
+                <svg class="nav__icon">
+                    <use alt="Icone que representa o perfil do usuário" xlink:href="public/images/sprite.svg#icon-user"/>
+                </svg>
+                <h4 class="nav__texto nav__email">seuemail@gmail.com</h4>
+            </div>
+            <button class="nav__btn--hamburguer">
+                <svg class="nav__hamburguer">
+                    <use alt="Icone que representa o menu" xlink:href="public/images/sprite.svg#icon-menu"/>
+                </svg>
+            </button>
+        </nav>
+        
+        <h1 class="header__heading header__heading--primary">Você traz o problema, nós resolvemos.</h1>
+        <h2 class="header__heading header__heading--secondary">Trabalhando com sabedoria. <span class="header__span">Serviço garantido.</span></h2>
+
+        <a href="#form" class="header__btn header__heading">
+            Entre em contato
+        </a>
+    </header>
+
+    <main class="main">
+        <section class="vantagens" id="vantagens">
+            <div class="vantagens__container">
+                <div class="vantagens__typography">
+                    <h2 class="vantagens__heading--secondary">Especialização em Diversas Áreas do Direito</h2>
+
+                    <p class="vantagens__paragraph">
+                        Você merece a melhor equipe legal ao seu lado, capaz de enfrentar qualquer desafio jurídico. No nosso escritório de advocacia, oferecemos um diferencial que fará toda a diferença para você: a especialização em diversas áreas do direito. Seja uma questão de direito de família, uma disputa comercial complexa ou uma batalha legal criminal, nossa equipe experiente está preparada para atender às suas necessidades com habilidade e determinação.
+                    </p>
+                </div>
+
+                <svg class="vantagens__icon">
+                    <use alt="Icone que representa uma pena" xlink:href="public/images/sprite.svg#icon-quill"/>
+                </svg>
+            </div>
+
+            <div class="vantagens__container">
+                <div class="vantagens__typography">
+                    <h2 class="vantagens__heading--secondary">Atendimento Personalizado </h2>
+
+                    <p class="vantagens__paragraph">
+                        No nosso escritório de advocacia, o cliente está no centro de tudo o que fazemos. Nossa abordagem é baseada no atendimento personalizado e no entendimento das suas necessidades individuais. Quando você se junta a nós, não é apenas mais um caso; é uma parceria. Nossos advogados se dedicam a conhecer os seus objetivos e preocupações, garantindo que cada estratégia legal seja adaptada às suas necessidades específicas.
+                    </p>
+                </div>
+
+                <svg class="vantagens__icon">
+                    <use alt="Icone que representa a conversa de um advogado e um cliente" xlink:href="public/images/sprite.svg#icon-bubbles3"/>
+                </svg>
+            </div>
+
+            <div class="vantagens__container">
+                <div class="vantagens__typography">
+                    <h2 class="vantagens__heading--secondary">Acesso a Recursos e Redes Profissionais</h2>
+
+                    <p class="vantagens__paragraph">
+                        No mundo jurídico, ter conexões e acesso a recursos de qualidade é essencial. Quando você escolhe nosso escritório de advocacia, você não está apenas obtendo um time de advogados excepcionais, mas também uma extensa rede de contatos profissionais. Trabalhamos lado a lado com especialistas, peritos e outros profissionais da área para garantir que você tenha todas as ferramentas necessárias para o sucesso.
+                    </p>
+                </div>
+
+                <svg class="vantagens__icon">
+                    <use alt="Icone que representa o perfil de um advogado profissional" xlink:href="public/images/sprite.svg#icon-user-tie"/>
+                </svg>
+            </div>
+        </section>
+
+        <section class="promessa" id="promessa">
+            <div class="promessa__headings">
+                <h2 class="promessa__heading--secondary heading__secondary">Nossa Promessa</h2>
+                <h3 class="promessa__heading--tertiary">Promessas Mantidas: Nosso Compromisso com o <span class="promessa__span">Atendimento Excepcional</span>.</h3>
+            </div>
+
+            <div class="promessa__grid">
+                <div class="promessa__container">
+                    <svg class="promessa__icon">
+                        <use alt="Icone que representa a conversa do cliente e do contratante" xlink:href="public/images/sprite.svg#icon-bubbles3"/>
+                    </svg>
+
+                    <div class="promessa__typography">
+                        <h4 class="promessa__heading--quartenery">Compreensão Total</h4>
+                        <p class="promessa__paragraph">
+                            Nosso compromisso é entender completamente as preocupações e objetivos de cada cliente, permitindo-nos fornecer soluções jurídicas sob medida.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="promessa__container">
+                    <svg class="promessa__icon">
+                        <use alt="Icon que representa a dedicação do escritório" xlink:href="public/images/sprite.svg#icon-pushpin"/>
+                    </svg>
+
+                    <div class="promessa__typography">
+                        <h4 class="promessa__heading--quartenery">Defesa Dedicada</h4>
+                        <p class="promessa__paragraph">
+                            Prometemos dedicar-nos incansavelmente à defesa dos interesses de nossos clientes, utilizando nossa expertise e recursos para obter resultados favoráveis.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="promessa__container">
+                    <svg class="promessa__icon">
+                        <use alt="Icon que representa os arquivos do cliente bem cuidados" xlink:href="public/images/sprite.svg#icon-address-book"/>
+                    </svg>
+
+                    <div class="promessa__typography">
+                        <h4 class="promessa__heading--quartenery">Transparência Clara</h4>
+                        <p class="promessa__paragraph">
+                            Mantemos uma comunicação aberta e transparente, garantindo que nossos clientes estejam sempre informados sobre seus casos e decisões importantes.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="promessa__container">
+                    <svg class="promessa__icon">
+                        <use alt="Icon que representa a excelência jurídica do escritório" xlink:href="public/images/sprite.svg#icon-hour-glass"/>
+                    </svg>
+
+                    <div class="promessa__typography">
+                        <h4 class="promessa__heading--quartenery">Excelência Jurídica</h4>
+                        <p class="promessa__paragraph">
+                            Nossa equipe de advogados mantém o mais alto padrão de excelência jurídica, mantendo-se atualizada com as últimas mudanças na lei para fornecer aconselhamento jurídico sólido.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="promessa__container">
+                    <svg class="promessa__icon">
+                        <use alt="Icone que representa as estrategias que serão adotadas nos atendimentos" xlink:href="public/images/sprite.svg#icon-files-empty"/>
+                    </svg>
+
+                    <div class="promessa__typography">
+                        <h4 class="promessa__heading--quartenery">Atendimento Personalizado</h4>
+                        <p class="promessa__paragraph">
+                            Reconhecemos a singularidade de cada cliente e adaptamos nossas estratégias legais para atender às suas necessidades específicas.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="promessa__container">
+                    <svg class="promessa__icon">
+                        <use alt="Icone que representa a profissiolnalidade do escritorio" xlink:href="public/images/sprite.svg#icon-user-tie"/>
+                    </svg>
+
+                    <div class="promessa__typography">
+                        <h4 class="promessa__heading--quartenery">Confidencialidade Absoluta</h4>
+                        <p class="promessa__paragraph">
+                             A confidencialidade é fundamental. Garantimos que todas as informações compartilhadas conosco sejam mantidas em sigilo estrito, respeitando os mais altos padrões éticos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="avaliacoes" id="avaliacoes">
+            <div class="avaliacoes__typography">
+                <h2 class="avaliacoes__heading--secondary heading__secondary">Nossas Avaliações</h2>
+                <p class="avaliacoes__paragraph">
+                    Ao longo dos anos conseguimos conquistar diversos clientes satisfeitos. <br /> Veja algumas de nossas avaliações no <span class="avaliacoes__span">Google Reviews</span>.
+                </p>
+            </div>
+            <div class="avaliacoes__avaliacao">
+                <div class="avaliacoes__perfil">
+                    <img src="public/images/perfil05.jpg" alt="" class="avaliacoes__imagem">
+                    
+                    <div class="avaliacoes__typography--nome">
+                        <h5 class="avaliacoes__nome">Amber Heard</h5>
+                        <p class="avaliacoes__descricao">
+                            Virgínia, Estados Unidos <br> (Há mais de um ano)
+                        </p>
+                    </div>
+                </div>
+
+                <div class="avaliacoes__box">
+                    <p class="avaliacoes__text">
+                        Contratei a Saberd para lidar com uma questão legal complexa e fiquei impressionada com o nível de profissionalismo que demonstraram. Mesmo perdendo o processo, desde o primeiro contato até a resolução do caso eles foram extremamente competentes e atenciosos. Recomendo-os fortemente a qualquer um que precise de assistência jurídica confiável.
+                    </p>
+
+                    <div class="avaliacoes__container--icon">
+                        <svg class="avaliacoes__icon">
+                            <use alt="Icone que representa uma estrela" xlink:href="public/images/sprite.svg#icon-star-full"/>
+                        </svg>
+                        <svg class="avaliacoes__icon">
+                            <use alt="Icone que representa uma estrela" xlink:href="public/images/sprite.svg#icon-star-full"/>
+                        </svg>
+                        <svg class="avaliacoes__icon">
+                            <use alt="Icone que representa uma estrela" xlink:href="public/images/sprite.svg#icon-star-full"/>
+                        </svg>
+                        <svg class="avaliacoes__icon">
+                            <use alt="Icone que representa uma estrela" xlink:href="public/images/sprite.svg#icon-star-full"/>
+                        </svg>
+                        <svg class="avaliacoes__icon">
+                            <use alt="Icone que representa uma estrela" xlink:href="public/images/sprite.svg#icon-star-full"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="avaliacoes__avaliacao">
+                <div class="avaliacoes__perfil">
+                    <img src="public/images/perfil04.jpg" alt="" class="avaliacoes__imagem">
+                    
+                    <div class="avaliacoes__typography--nome">
+                        <h5 class="avaliacoes__nome">Johnny Depp</h5>
+                        <p class="avaliacoes__descricao">
+                            Virgínia, Estados Unidos<br> (Há mais de um ano)
+                        </p>
+                    </div>
+                </div>
+
+                <div class="avaliacoes__box">
+                    <p class="avaliacoes__text">
+                        Minha experiência com a Saberd tem sido excepcional. A equipe de advogados demonstrou um profundo conhecimento jurídico, sempre superando minhas expectativas. Eles não apenas forneceram soluções jurídicas sob medida para minhas necessidades, mas também foram extremamente proativos e ágeis em suas respostas.
+                    </p>
+
+                    <div class="avaliacoes__container--icon">
+                        <svg class="avaliacoes__icon">
+                            <use alt="Icone que representa uma estrela" xlink:href="public/images/sprite.svg#icon-star-full"/>
+                        </svg>
+                        <svg class="avaliacoes__icon">
+                            <use alt="Icone que representa uma estrela" xlink:href="public/images/sprite.svg#icon-star-full"/>
+                        </svg>
+                        <svg class="avaliacoes__icon">
+                            <use alt="Icone que representa uma estrela" xlink:href="public/images/sprite.svg#icon-star-full"/>
+                        </svg>
+                        <svg class="avaliacoes__icon">
+                            <use alt="Icone que representa uma estrela" xlink:href="public/images/sprite.svg#icon-star-full"/>
+                        </svg>
+                        <svg class="avaliacoes__icon">
+                            <use alt="Icone que representa uma estrela" xlink:href="public/images/sprite.svg#icon-star-full"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="avaliacoes__avaliacao">
+                <div class="avaliacoes__perfil">
+                    <img src="public/images/perfil01.jpg" alt="" class="avaliacoes__imagem">
+                    
+                    <div class="avaliacoes__typography--nome">
+                        <h5 class="avaliacoes__nome">Luis Otávio</h5>
+                        <p class="avaliacoes__descricao">
+                            Rio de Janeiro (4 meses atrás)
+                        </p>
+                    </div>
+                </div>
+
+                <div class="avaliacoes__box">
+                    <p class="avaliacoes__text">
+                        A abordagem ética e a integridade da empresa inspiram confiança, e estabeleceram um relacionamento de longo prazo comigo. Estou muito satisfeito com os serviços da Saberd e recomendo-a fortemente a qualquer pessoa em busca de assistência jurídica excepcional.
+                    </p>
+
+                    <div class="avaliacoes__container--icon">
+                        <svg class="avaliacoes__icon">
+                            <use alt="Icone que representa uma estrela" xlink:href="public/images/sprite.svg#icon-star-full"/>
+                        </svg>
+                        <svg class="avaliacoes__icon">
+                            <use alt="Icone que representa uma estrela" xlink:href="public/images/sprite.svg#icon-star-full"/>
+                        </svg>
+                        <svg class="avaliacoes__icon">
+                            <use alt="Icone que representa uma estrela" xlink:href="public/images/sprite.svg#icon-star-full"/>
+                        </svg>
+                        <svg class="avaliacoes__icon">
+                            <use alt="Icone que representa uma estrela" xlink:href="public/images/sprite.svg#icon-star-full"/>
+                        </svg>
+                        <svg class="avaliacoes__icon">
+                            <use alt="Icone que representa uma estrela" xlink:href="public/images/sprite.svg#icon-star-full"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="avaliacoes__avaliacao">
+                <div class="avaliacoes__perfil">
+                    <img src="public/images/perfil02.jpg" alt="" class="avaliacoes__imagem">
+                    
+                    <div class="avaliacoes__typography--nome">
+                        <h5 class="avaliacoes__nome">Mário Mesquita</h5>
+                        <p class="avaliacoes__descricao">
+                            São Paulo (9 meses atrás)
+                        </p>
+                    </div>
+                </div>
+
+                <div class="avaliacoes__box">
+                    <p class="avaliacoes__text">
+                        A Saberd são verdadeiros especialistas em direito empresarial. Eles nos ajudaram a navegar por um emaranhado de regulamentações e contratos comerciais com facilidade. Sua capacidade de simplificar questões complexas e fornecer orientação clara foi inestimável para o nosso negócio. Não poderíamos estar mais satisfeitos.
+                    </p>
+
+                    <div class="avaliacoes__container--icon">
+                        <svg class="avaliacoes__icon">
+                            <use alt="Icone que representa uma estrela" xlink:href="public/images/sprite.svg#icon-star-full"/>
+                        </svg>
+                        <svg class="avaliacoes__icon">
+                            <use alt="Icone que representa uma estrela" xlink:href="public/images/sprite.svg#icon-star-full"/>
+                        </svg>
+                        <svg class="avaliacoes__icon">
+                            <use alt="Icone que representa uma estrela" xlink:href="public/images/sprite.svg#icon-star-full"/>
+                        </svg>
+                        <svg class="avaliacoes__icon">
+                            <use alt="Icone que representa uma estrela" xlink:href="public/images/sprite.svg#icon-star-full"/>
+                        </svg>
+                        <svg class="avaliacoes__icon">
+                            <use alt="Icone que representa uma estrela" xlink:href="public/images/sprite.svg#icon-star-full"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="avaliacoes__avaliacao">
+                <div class="avaliacoes__perfil">
+                    <img src="public/images/perfil03.jpg" alt="" class="avaliacoes__imagem">
+                    
+                    <div class="avaliacoes__typography--nome">
+                        <h5 class="avaliacoes__nome">Luiza Andrade</h5>
+                        <p class="avaliacoes__descricao">
+                            Minas Gerais (7 meses atrás)
+                        </p>
+                    </div>
+                </div>
+
+                <div class="avaliacoes__box">
+                    <p class="avaliacoes__text">
+                        Enfrentei uma disputa legal que estava me causando muita preocupação. A Saberd não apenas resolveram o caso de forma eficaz, mas o fizeram de maneira surpreendentemente rápida. Eles estavam sempre disponíveis para responder às minhas perguntas e me manter informado ao longo do processo. Um escritório de advocacia de alto nível!
+                    </p>
+
+                    <div class="avaliacoes__container--icon">
+                        <svg class="avaliacoes__icon">
+                            <use alt="Icone que representa uma estrela" xlink:href="public/images/sprite.svg#icon-star-full"/>
+                        </svg>
+                        <svg class="avaliacoes__icon">
+                            <use alt="Icone que representa uma estrela" xlink:href="public/images/sprite.svg#icon-star-full"/>
+                        </svg>
+                        <svg class="avaliacoes__icon">
+                            <use alt="Icone que representa uma estrela" xlink:href="public/images/sprite.svg#icon-star-full"/>
+                        </svg>
+                        <svg class="avaliacoes__icon">
+                            <use alt="Icone que representa uma estrela" xlink:href="public/images/sprite.svg#icon-star-full"/>
+                        </svg>
+                        <svg class="avaliacoes__icon">
+                            <use alt="Icone que representa uma estrela" xlink:href="public/images/sprite.svg#icon-star-full"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="galeria">
+            <img src="public/images/Gal3.jpg" alt="Uma advogada morena de cabelo preto estudando um caso" class="galeria__imagem">
+            <img src="public/images/Gal1.jpg" alt="Dois advogados e uma advogada conversando" class="galeria__imagem">
+            <img src="public/images/Gal2.jpg" alt="Duas advogadas conversando no corredor" class="galeria__imagem">
+            <img src="public/images/Gal4.jpg" alt="Um advogado fazendo anotações de um caso" class="galeria__imagem">
+            <img src="public/images/Gal5.jpg" alt="Um advogado e uma advogada conversando sobre um caso olhando o computador" class="galeria__imagem">
+        </section>
+
+        <section class="formulario" id="form">
+            <div class="formulario__typography">
+                <h2 class="formulario__heading--secondary heading__secondary">Precisa de nossos serviços?</h2>
+                <h3 class="formulario__heading--tertiary">Preencha o formulário abaixo para marcar uma consulta.</h3>
+            </div>
+
+            <form class="formulario__form">
+                <div class="formulario__container">
+                    <div class="formulario__nome formulario__div">
+                        <div class="formulario__box">
+                            <label class="formulario__label" for="nome">Nome:</label>
+                            <input type="text" class="formulario__input" id="nome" placeholder="Insira seu nome" required>
+                        </div>
+                    
+                        <div class="formulario__box">
+                            <label class="formulario__label" for="sobrenome">Sobrenome:</label>
+                            <input type="text" class="formulario__input" id="sobrenome" placeholder="Insira seu sobrenome" required>
+                        </div>
+                    </div>
+                    <div class="formulario__endereco formulario__div">
+                        <div class="formulario__box">
+                            <label for="endereco" class="formulario__label">Endereço:</label>
+                            <input type="text" class="formulario__input" id="endereco" placeholder="Insira seu endereço" required>
+                        </div>
+
+                        <div class="formulario__box">
+                            <label for="cidade" class="formulario__label">Cidade:</label>
+                            <input type="text" class="formulario__input" id="cidade" placeholder="Insira sua cidade" required>
+                        </div>
+
+                        <div class="formulario__box">
+                            <label for="estado" class="formulario__label">Estado:</label>
+                            <input type="text" class="formulario__input" id="estado" placeholder="Insira seu estado" required>
+                        </div>
+
+                        <div class="formulario__box">
+                            <label for="cep" class="formulario__label">CEP:</label>
+                            <input type="text" class="formulario__input" id="cep" placeholder="Insira seu CEP" required>
+                        </div>
+                    </div>
+
+                    <div class="formulario__nascimento formulario__div formulario__box">
+                        <label for="nasc" class="formulario__label">Data de Nascimento:</label>
+                        <input type="date" class="formulario__input" id="nasc" required>
+                    </div>
+                    
+                    <div class="formulario__rg formulario__div formulario__box">
+                        <label for="rg" class="formulario__label">RG:</label>
+                        <input type="number" min="0" class="formulario__input" id="rg" placeholder="Inisira seu RG" required>
+                    </div>
+
+                    <div class="formulario__cep formulario__div formulario__box">
+                        <label for="cpf" class="formulario__label">CPF:</label>
+                        <input type="number" min="0" class="formulario__input" id="cpf" placeholder="Insira seu CPF" required>
+                    </div>
+
+                    <div class="formulario__tel formulario__div formulario__box">
+                        <label for="tel" class="formulario__label">Telefone:</label>
+                        <input type="number" min="0" class="formulario__input" id="tel" placeholder="Insira seu número" required>
+                    </div>
+
+                    <div class="formulario__email formulario__div formulario__box">
+                        <label for="email" class="formulario__label">Email:</label>
+                        <input type="email" class="formulario__input" id="email" placeholder="Insira seu email" required>
+                    </div>
+                </div>
+
+                <div class="formulario__container">
+                    <div class="formulario__relato formulario__box">
+                        <label for="relato" class="formulario__label">Relato:</label>
+                        <textarea class="formulario__input" id="relato" required></textarea>
+                    </div>
+
+                    <div class="formulario__consentimento">
+                        <h4 class="formulario__label--2 formulario__heading--termo">Termo de Consentimento:</h4>
+
+                        <div class="formulario__box--2">
+                            <input type="checkbox" class="formulario__check" id="consentimento--sigilo" required>
+                            <label for="consentimento--sigilo" class="formulario__label--2 formulario__label--check">
+                                Declaro estar ciente de que as informações por mim prestadas, serão gravadas e armazenadas pela advogada, que guardará o devido sigilo, conforme exigido por lei.
+                            </label>
+                        </div>
+                        
+                        <div class="formulario__box--2">
+                            <input type="checkbox" class="formulario__check" id="consentimento--pagamento" required>
+                            <label for="consentimento--pagamento" class="formulario__label--2 formulario__label--check">
+                                Declaro ainda, estar ciente que a CONSULTA requer o pagamento de honorários no valor de R$150,00. Caso não opte por pagar os honorários, o procedimento será ATENDIMENTO.
+                            </label>
+                        </div>
+                            <div class="formulario__dropdown">
+                            <label for="tipo--servico"><br><b>Selecione o serviço que você deseja contratar: </b><br></label>
+                            <select id="tipo--servico" name="tipo--servico">
+                                <option value="Crime Cibernético" label="Crime Cibernético">
+                                <option value="Crime Tributário" label="Crime Tributário">
+                                <option value="Concorrência Desleal" label="Concorrência Desleal">
+                                <option value="Fraude Corporativa" label="Fraude Corporativa"> 
+                                <option value="Violações Contratuais" label="Violações Contratuais">
+                                <option value="Outros" label="Outros">   
+                            </select>
+                            </div>
+                        <input type="submit" class="formulario__submit">
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__box">
+                <h2 class="footer__logo">Saberd</h2>
+                <p class="header__heading--secondary footer__paragraph">Trabalhando com sabedoria.</p>
+
+                <div class="footer__icons">
+                    <svg class="footer__icon">
+                        <use xlink:href="public/images/sprite.svg#icon-google-plus" />
+                    </svg>
+                    
+                    <svg class="footer__icon">
+                        <use xlink:href="public/images/sprite.svg#icon-facebook" />
+                    </svg>
+                    
+                    <svg class="footer__icon">
+                        <use xlink:href="public/images/sprite.svg#icon-twitter" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="footer__box">
+                <h3 class="footer__heading--tertiary">Serviços:</h3>
+
+                <ul class="footer__ul">
+                    <li class="footer__li">
+                        <a href="#" class="footer__link">Gerenciamento de Casos</a>
+                    </li>
+                    <li class="footer__li">
+                        <a href="#" class="footer__link">Pesquisa Jurídica</a>
+                    </li>
+                    <li class="footer__li">
+                        <a href="#" class="footer__link">Automação Documental</a>
+                    </li>
+                    <li class="footer__li">
+                        <a href="#" class="footer__link">Gerenciamento Documental</a>
+                    </li>
+                    <li class="footer__li">
+                        <a href="#" class="footer__link">Descoberta Eletrônica</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__box">
+                <h3 class="footer__heading--tertiary">Perguntas:</h3>
+
+                <ul class="footer__ul">
+                    <li class="footer__li">
+                        <a href="#" class="footer__link">Quais são as áreas de especialização da Saberd?</a>
+                    </li>
+                    <li class="footer__li">
+                        <a href="#" class="footer__link">Quais são as credenciais da Saberd?</a>
+                    </li>
+                    <li class="footer__li">
+                        <a href="#" class="footer__link">Qual é a estrutura de preços e taxas?</a>
+                    </li>
+                    <li class="footer__li">
+                        <a href="#" class="footer__link">Como a Saberd aborda a comunicação com os clientes?</a>
+                    </li>
+                    <li class="footer__li">
+                        <a href="#" class="footer__link">Quais são os prazos esperados e cronograma do caso?</a>
+                    </li>
+                    <li class="footer__li">
+                        <a href="#" class="footer__link">Como a Saberd lida com a confidencialidade?</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer__container">
+            <ul class="footer__ul--2">
+                <li class="footer__li">
+                    <a href="#" class="footer__link">Contato</a>
+                </li>
+                <li class="footer__li">
+                    <a href="#" class="footer__link">Termos e condições</a>
+                </li>
+                <li class="footer__li">
+                    <a href="#" class="footer__link">Política de privacidade</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <button class="mensagem">
+        <svg class="mensagem__icon">
+            <use xlink:href="public/images/sprite.svg#icon-mail"/>
+        </svg>
+        <span class="mensagem__span">Entre em contato</span>
+    </button>
+    <script src="scripts.js"></script>
+
+</body>
+</html>
